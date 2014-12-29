@@ -1558,3 +1558,243 @@ Stack trace:
 REQUEST_URI=/index.php?r=admin/user/add
 HTTP_REFERER=http://www.xs.com/index.php?r=admin/user/add
 ---
+2014/12/28 13:19:10 [error] [exception.EMongoException] exception 'EMongoException' with message 'Cannot apply scopes to criteria' in D:\www\xiaoshuo\xiaoshuo\protected\extensions\YiiMongoDbSuite\EMongoDocument.php:531
+Stack trace:
+#0 D:\www\xiaoshuo\xiaoshuo\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(953): EMongoDocument->applyScopes('$criteria')
+#1 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php(11): EMongoDocument->count('$criteria')
+#2 D:\www\xiaoshuo\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#3 D:\www\xiaoshuo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\xiaoshuo\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\xiaoshuo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/inde...')
+#8 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\www\xiaoshuo\xiaoshuo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=admin/user/index
+HTTP_REFERER=http://www.xs.com/index.php?r=admin/default/
+---
+2014/12/28 13:20:04 [error] [exception.EMongoException] exception 'EMongoException' with message 'Cannot apply scopes to criteria' in D:\www\xiaoshuo\xiaoshuo\protected\extensions\YiiMongoDbSuite\EMongoDocument.php:531
+Stack trace:
+#0 D:\www\xiaoshuo\xiaoshuo\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(953): EMongoDocument->applyScopes('$criteria')
+#1 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php(11): EMongoDocument->count('$criteria')
+#2 D:\www\xiaoshuo\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#3 D:\www\xiaoshuo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\xiaoshuo\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\xiaoshuo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/inde...')
+#8 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\www\xiaoshuo\xiaoshuo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=admin/user/index
+HTTP_REFERER=http://www.xs.com/index.php?r=admin/default/
+---
+2014/12/28 13:20:57 [error] [exception.EMongoException] exception 'EMongoException' with message 'Cannot apply scopes to criteria' in D:\www\xiaoshuo\xiaoshuo\protected\extensions\YiiMongoDbSuite\EMongoDocument.php:531
+Stack trace:
+#0 D:\www\xiaoshuo\xiaoshuo\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(953): EMongoDocument->applyScopes(Object(CDbCriteria))
+#1 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php(11): EMongoDocument->count(Object(CDbCriteria))
+#2 D:\www\xiaoshuo\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#3 D:\www\xiaoshuo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\xiaoshuo\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\xiaoshuo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/inde...')
+#8 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\www\xiaoshuo\xiaoshuo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=admin/user/index
+HTTP_REFERER=http://www.xs.com/index.php?r=admin/default/
+---
+2014/12/28 14:04:09 [error] [php] Undefined variable: pager (D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php:16)
+Stack trace:
+#0 D:\www\xiaoshuo\framework\web\CController.php(286): UserController->runAction()
+#1 D:\www\xiaoshuo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#2 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): UserController->run()
+#3 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 D:\www\xiaoshuo\xiaoshuo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/user/index
+in D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php (16)
+in D:\www\xiaoshuo\xiaoshuo\index.php (13)
+2014/12/28 14:04:13 [error] [php] Undefined variable: pager (D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php:16)
+Stack trace:
+#0 D:\www\xiaoshuo\framework\web\CController.php(286): UserController->runAction()
+#1 D:\www\xiaoshuo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#2 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): UserController->run()
+#3 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 D:\www\xiaoshuo\xiaoshuo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/user/index
+in D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php (16)
+in D:\www\xiaoshuo\xiaoshuo\index.php (13)
+2014/12/28 14:04:39 [error] [php] Undefined variable: list (D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\views\user\index.php:54)
+Stack trace:
+#0 D:\www\xiaoshuo\framework\web\CController.php(869): UserController->renderFile()
+#1 D:\www\xiaoshuo\framework\web\CController.php(782): UserController->renderPartial()
+#2 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php(16): UserController->render()
+#3 D:\www\xiaoshuo\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#4 D:\www\xiaoshuo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\www\xiaoshuo\framework\web\CController.php(286): UserController->runAction()
+#6 D:\www\xiaoshuo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): UserController->run()
+#8 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\www\xiaoshuo\xiaoshuo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/user/index
+in D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\views\user\index.php (54)
+in D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php (16)
+in D:\www\xiaoshuo\xiaoshuo\index.php (13)
+2014/12/28 14:04:42 [error] [php] Undefined variable: list (D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\views\user\index.php:54)
+Stack trace:
+#0 D:\www\xiaoshuo\framework\web\CController.php(869): UserController->renderFile()
+#1 D:\www\xiaoshuo\framework\web\CController.php(782): UserController->renderPartial()
+#2 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php(16): UserController->render()
+#3 D:\www\xiaoshuo\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#4 D:\www\xiaoshuo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\www\xiaoshuo\framework\web\CController.php(286): UserController->runAction()
+#6 D:\www\xiaoshuo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): UserController->run()
+#8 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\www\xiaoshuo\xiaoshuo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/user/index
+in D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\views\user\index.php (54)
+in D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php (16)
+in D:\www\xiaoshuo\xiaoshuo\index.php (13)
+2014/12/28 14:05:36 [error] [php] Undefined variable: list (D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\views\user\index.php:54)
+Stack trace:
+#0 D:\www\xiaoshuo\framework\web\CController.php(869): UserController->renderFile()
+#1 D:\www\xiaoshuo\framework\web\CController.php(782): UserController->renderPartial()
+#2 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php(16): UserController->render()
+#3 D:\www\xiaoshuo\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#4 D:\www\xiaoshuo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\www\xiaoshuo\framework\web\CController.php(286): UserController->runAction()
+#6 D:\www\xiaoshuo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): UserController->run()
+#8 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\www\xiaoshuo\xiaoshuo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/user/index
+in D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\views\user\index.php (54)
+in D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php (16)
+in D:\www\xiaoshuo\xiaoshuo\index.php (13)
+2014/12/28 14:08:47 [error] [exception.EMongoException] exception 'EMongoException' with message 'Cannot apply scopes to criteria' in D:\www\xiaoshuo\xiaoshuo\protected\extensions\YiiMongoDbSuite\EMongoDocument.php:531
+Stack trace:
+#0 D:\www\xiaoshuo\xiaoshuo\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(843): EMongoDocument->applyScopes(Object(CPagination))
+#1 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php(14): EMongoDocument->findAll(Object(CPagination))
+#2 D:\www\xiaoshuo\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#3 D:\www\xiaoshuo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\xiaoshuo\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\xiaoshuo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/inde...')
+#8 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\www\xiaoshuo\xiaoshuo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=admin/user/index
+HTTP_REFERER=http://www.xs.com/index.php?r=admin/default/
+---
+2014/12/28 14:10:02 [error] [exception.EMongoException] exception 'EMongoException' with message 'Cannot apply scopes to criteria' in D:\www\xiaoshuo\xiaoshuo\protected\extensions\YiiMongoDbSuite\EMongoDocument.php:531
+Stack trace:
+#0 D:\www\xiaoshuo\xiaoshuo\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(953): EMongoDocument->applyScopes(Object(CDbCriteria))
+#1 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php(10): EMongoDocument->count(Object(CDbCriteria))
+#2 D:\www\xiaoshuo\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#3 D:\www\xiaoshuo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\xiaoshuo\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\xiaoshuo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/inde...')
+#8 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\www\xiaoshuo\xiaoshuo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=admin/user/index
+HTTP_REFERER=http://www.xs.com/index.php?r=admin/default/
+---
+2014/12/29 12:43:03 [error] [php] Undefined variable: pages (D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\views\user\index.php:74)
+Stack trace:
+#0 D:\www\xiaoshuo\framework\web\CController.php(869): UserController->renderFile()
+#1 D:\www\xiaoshuo\framework\web\CController.php(782): UserController->renderPartial()
+#2 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php(19): UserController->render()
+#3 D:\www\xiaoshuo\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#4 D:\www\xiaoshuo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\www\xiaoshuo\framework\web\CController.php(286): UserController->runAction()
+#6 D:\www\xiaoshuo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): UserController->run()
+#8 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\www\xiaoshuo\xiaoshuo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/user/index
+in D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\views\user\index.php (74)
+in D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php (19)
+in D:\www\xiaoshuo\xiaoshuo\index.php (13)
+2014/12/29 12:56:59 [error] [exception.CException] exception 'CException' with message 'Property "CLinkPager.template" is not defined.' in D:\www\xiaoshuo\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\www\xiaoshuo\framework\web\CWidgetFactory.php(161): CComponent->__set('template', '{items}{summary...')
+#1 D:\www\xiaoshuo\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'CLinkPager', Array)
+#2 D:\www\xiaoshuo\framework\web\CBaseController.php(180): CBaseController->createWidget('CLinkPager', Array)
+#3 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\views\user\index.php(76): CBaseController->widget('CLinkPager', Array)
+#4 D:\www\xiaoshuo\framework\web\CBaseController.php(126): require('D:\www\xiaoshuo...')
+#5 D:\www\xiaoshuo\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\xiaoshuo...', Array, true)
+#6 D:\www\xiaoshuo\framework\web\CController.php(869): CBaseController->renderFile('D:\www\xiaoshuo...', Array, true)
+#7 D:\www\xiaoshuo\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php(19): CController->render('index', Array)
+#9 D:\www\xiaoshuo\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#10 D:\www\xiaoshuo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\www\xiaoshuo\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\www\xiaoshuo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): CController->run('index')
+#14 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/inde...')
+#15 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\www\xiaoshuo\xiaoshuo\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=admin/user/index
+HTTP_REFERER=http://www.xs.com/index.php?r=admin/default/
+---
+2014/12/29 13:06:56 [error] [exception.CException] exception 'CException' with message 'CPagination and its behaviors do not have a method or closure named "getData".' in D:\www\xiaoshuo\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\www\xiaoshuo\framework\zii\widgets\CBaseListView.php(125): CComponent->__call('getData', Array)
+#1 D:\www\xiaoshuo\framework\zii\widgets\CBaseListView.php(125): CPagination->getData()
+#2 D:\www\xiaoshuo\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#3 D:\www\xiaoshuo\framework\web\CBaseController.php(147): CListView->init()
+#4 D:\www\xiaoshuo\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\views\user\index.php(98): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 D:\www\xiaoshuo\framework\web\CBaseController.php(126): require('D:\www\xiaoshuo...')
+#7 D:\www\xiaoshuo\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\xiaoshuo...', Array, true)
+#8 D:\www\xiaoshuo\framework\web\CController.php(869): CBaseController->renderFile('D:\www\xiaoshuo...', Array, true)
+#9 D:\www\xiaoshuo\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 D:\www\xiaoshuo\xiaoshuo\protected\modules\admin\controllers\UserController.php(19): CController->render('index', Array)
+#11 D:\www\xiaoshuo\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#12 D:\www\xiaoshuo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\www\xiaoshuo\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\www\xiaoshuo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): CController->run('index')
+#16 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/inde...')
+#17 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 D:\www\xiaoshuo\xiaoshuo\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php?r=admin/user/index
+HTTP_REFERER=http://www.xs.com/index.php?r=admin/default/
+---
+2014/12/29 14:23:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "del".' in D:\www\xiaoshuo\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\xiaoshuo\framework\web\CController.php(270): CController->missingAction('del')
+#1 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): CController->run('del')
+#2 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/del')
+#3 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\www\xiaoshuo\xiaoshuo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/user/del&id=549f5b4a29bc7b0c2b000029%3E
+HTTP_REFERER=http://www.xs.com/index.php?r=admin/user/index
+---
+2014/12/29 14:25:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "del".' in D:\www\xiaoshuo\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\xiaoshuo\framework\web\CController.php(270): CController->missingAction('del')
+#1 D:\www\xiaoshuo\framework\web\CWebApplication.php(282): CController->run('del')
+#2 D:\www\xiaoshuo\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/del')
+#3 D:\www\xiaoshuo\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\www\xiaoshuo\xiaoshuo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/user/del&id=549f5b4a29bc7b0c2b000029%3E
+HTTP_REFERER=http://www.xs.com/index.php?r=admin/user/index
+---

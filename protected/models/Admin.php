@@ -15,7 +15,7 @@ class Admin extends EMongoDocument
 		return array(
 				array('username,password,email,realname,status','required'),
 				array('email','email'),
-				//array('username','unique','caseSensitive'=>false),
+				//array('username','unique','caseSensitive'=>false),不知道为什么不行
 				array('status', 'in', 'range' => array(0, 1))
 				
 				
