@@ -10,12 +10,30 @@ class Admin extends EMongoDocument
 	public static function model($className = __CLASS__){
 		return parent::model($className);
 	}
+	/*
+	public function primaryKey()
+	{
+		return '_id'; // Model field name, by default the _id field is used
+	}*/
+	public function indexes()
+	{
+		return array(
+				'index1_name'=>array(
+						'key'=>array(
+								'username'=>EMongoCriteria::SORT_ASC
+								//'field_name.embeded_field'=>EMongoCriteria::SORT_DESC
+						),
+						'unique'=>true,
+				)
+		);
+	}
 	public function rules()
 	{
 		return array(
-				array('username,password,email,realname,status','required'),
+				array('username,email,realname,status','required'),
+				array('password','required','on'=>'add'),
 				array('email','email'),
-				//array('username','unique','caseSensitive'=>false),不知道为什么不行
+				//array('username','unique'),
 				array('status', 'in', 'range' => array(0, 1))
 				
 				

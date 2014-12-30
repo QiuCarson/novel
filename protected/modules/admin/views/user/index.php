@@ -34,11 +34,29 @@
     </style>
 </head>
 <body>
+<div class='row'>
 <form class="form-inline definewidth m20" action="index.html" method="get">    
     用户名称：
-    <input type="text" name="key" id="username"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
+    <input type="text" name="key" id="username" class="form-control" placeholder="" value="">&nbsp;&nbsp;  
     <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <a href="<?php echo $this->createUrl('add')?>"><span type="button" class="btn btn-success" id="addnew">新增用户</span></a>
 </form>
+</div>
+<div class="definewidth row m10">
+<?php if(Yii::app()->user->hasFlash('success')):?>
+    <div class="alert alert-success alert-dismissible col-xs-4  definewidth" role="alert">
+	  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	  <strong>Success!</strong> <?php echo Yii::app()->user->getFlash('success')?>
+	</div>
+
+<?php endif?>
+<?php if(Yii::app()->user->hasFlash('error')):?>
+    <div class="alert alert-danger alert-dismissible col-xs-4  definewidth" role="alert">
+	  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	  <strong>Error!</strong> <?php echo Yii::app()->user->getFlash('error')?>
+	</div>
+
+<?php endif?>
+</div>
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
     <tr>
@@ -47,7 +65,6 @@
         <th>邮件</th>
         <th>状态</th>
         <th>操作</th>
-        
     </tr>
     </thead>
     <?php foreach ($list as $val){?>
@@ -57,7 +74,7 @@
             <td><?php echo $val->email;?></td>
             <td><?php echo $val->status?"启用":"禁用";?></td>
             <td>
-                <a class="btn btn-small btn-info" href="<?php echo $this->createUrl("edit",array("id"=>$val->_id))?>">编辑</a>
+                <a class="btn btn-small btn-info" href="<?php echo $this->createUrl("edit",array("_id"=>$val->_id))?>">编辑</a>
                 <a class="btn btn-danger" href="<?php echo $this->createUrl("del",array("id"=>$val->_id))?>" onclick="javascript:return del();">删除</a>                
             </td>
         </tr>

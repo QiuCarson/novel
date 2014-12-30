@@ -30,10 +30,57 @@ class UserController extends Controller
 			$model->password=md5($get['password']);
 			if($model->save())
 			{
-				$this->redirect('user/index');
+				Yii::app()->user->setFlash('success', '添加成功');
+				$this->redirect(array('user/index'));
+			}
+			else
+			{
+				Yii::app()->user->setFlash('error', '修改失败');
 			}
 		}
 		$this->render('add',array('model'=>$model));
 	}
-
+	public function actionDel($id)
+	{
+		
+		$result = Admin::model()->deleteByPk(new MongoID($id));
+    	if($result !== true)
+    	{	
+    		Yii::app()->user->setFlash('success', '删除成功');
+		}
+		else
+		{
+			Yii::app()->user->setFlash('error', '删除失败');
+		}
+		$this->redirect(array('user/index'));
+	}
+	
+	public function actionEdit($_id)
+	{
+		$model=Admin::model();
+		$adminModel=$model->findByPk(new MongoID($_id));
+		$get=Yii::app()->request->getParam('Admin');
+		$adminModel->attributes=$get;
+		if($get && $adminModel->validate())
+		{
+			$get=Yii::app()->request->getParam('Admin');
+			
+			if(!empty($get['password']))
+			{	
+				$adminModel->password=md5($get['password']);
+			}
+			if($adminModel->save())
+			{
+				Yii::app()->user->setFlash('success', '修改成功');
+				$this->redirect(array('user/index'));
+			}
+			else
+			{
+				Yii::app()->user->setFlash('error', '修改失败');
+				$this->redirect(array('user/index'));
+			}
+		}
+		$adminModel->password='';
+		$this->render('edit',array('model'=>$adminModel));
+	}
 }
